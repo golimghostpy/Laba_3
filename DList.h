@@ -29,6 +29,7 @@ public:
     void delete_value(string);
     int find_value(string) const;
     void print(string) const;
+    TNode* find_at(int) const;
 };
 
 #endif // TLIST_H_INCLUDED

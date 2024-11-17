@@ -47,61 +47,68 @@ cmake_ninja_workdir = /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/
 #############################################
 # Order-only phony target for main
 
-build cmake_object_order_depends_target_main: phony || .
+build cmake_object_order_depends_target_main: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
 
 build CMakeFiles/main.dir/main.cpp.o: CXX_COMPILER__main_unscanned_Debug /home/golimghost/Desktop/CProj/Laba_3/main.cpp || cmake_object_order_depends_target_main
   DEP_FILE = CMakeFiles/main.dir/main.cpp.o.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I/home/golimghost/Desktop/CProj/Laba_3/.
+  FLAGS = --coverage -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/golimghost/Desktop/CProj/Laba_3/. -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/include -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir
 
 build CMakeFiles/main.dir/Array.cpp.o: CXX_COMPILER__main_unscanned_Debug /home/golimghost/Desktop/CProj/Laba_3/Array.cpp || cmake_object_order_depends_target_main
   DEP_FILE = CMakeFiles/main.dir/Array.cpp.o.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I/home/golimghost/Desktop/CProj/Laba_3/.
+  FLAGS = --coverage -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/golimghost/Desktop/CProj/Laba_3/. -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/include -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir
 
 build CMakeFiles/main.dir/OList.cpp.o: CXX_COMPILER__main_unscanned_Debug /home/golimghost/Desktop/CProj/Laba_3/OList.cpp || cmake_object_order_depends_target_main
   DEP_FILE = CMakeFiles/main.dir/OList.cpp.o.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I/home/golimghost/Desktop/CProj/Laba_3/.
+  FLAGS = --coverage -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/golimghost/Desktop/CProj/Laba_3/. -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/include -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir
 
 build CMakeFiles/main.dir/DList.cpp.o: CXX_COMPILER__main_unscanned_Debug /home/golimghost/Desktop/CProj/Laba_3/DList.cpp || cmake_object_order_depends_target_main
   DEP_FILE = CMakeFiles/main.dir/DList.cpp.o.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I/home/golimghost/Desktop/CProj/Laba_3/.
+  FLAGS = --coverage -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/golimghost/Desktop/CProj/Laba_3/. -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/include -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir
 
 build CMakeFiles/main.dir/Queue.cpp.o: CXX_COMPILER__main_unscanned_Debug /home/golimghost/Desktop/CProj/Laba_3/Queue.cpp || cmake_object_order_depends_target_main
   DEP_FILE = CMakeFiles/main.dir/Queue.cpp.o.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I/home/golimghost/Desktop/CProj/Laba_3/.
+  FLAGS = --coverage -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/golimghost/Desktop/CProj/Laba_3/. -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/include -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir
 
 build CMakeFiles/main.dir/Stack.cpp.o: CXX_COMPILER__main_unscanned_Debug /home/golimghost/Desktop/CProj/Laba_3/Stack.cpp || cmake_object_order_depends_target_main
   DEP_FILE = CMakeFiles/main.dir/Stack.cpp.o.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I/home/golimghost/Desktop/CProj/Laba_3/.
+  FLAGS = --coverage -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/golimghost/Desktop/CProj/Laba_3/. -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/include -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir
 
 build CMakeFiles/main.dir/HashTable.cpp.o: CXX_COMPILER__main_unscanned_Debug /home/golimghost/Desktop/CProj/Laba_3/HashTable.cpp || cmake_object_order_depends_target_main
   DEP_FILE = CMakeFiles/main.dir/HashTable.cpp.o.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I/home/golimghost/Desktop/CProj/Laba_3/.
+  FLAGS = --coverage -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/golimghost/Desktop/CProj/Laba_3/. -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/include -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir
 
 build CMakeFiles/main.dir/AVLTree.cpp.o: CXX_COMPILER__main_unscanned_Debug /home/golimghost/Desktop/CProj/Laba_3/AVLTree.cpp || cmake_object_order_depends_target_main
   DEP_FILE = CMakeFiles/main.dir/AVLTree.cpp.o.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I/home/golimghost/Desktop/CProj/Laba_3/.
+  FLAGS = --coverage -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/golimghost/Desktop/CProj/Laba_3/. -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/include -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest
+  OBJECT_DIR = CMakeFiles/main.dir
+  OBJECT_FILE_DIR = CMakeFiles/main.dir
+
+build CMakeFiles/main.dir/testing.cpp.o: CXX_COMPILER__main_unscanned_Debug /home/golimghost/Desktop/CProj/Laba_3/testing.cpp || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles/main.dir/testing.cpp.o.d
+  FLAGS = --coverage -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/golimghost/Desktop/CProj/Laba_3/. -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/include -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir
 
@@ -113,13 +120,26 @@ build CMakeFiles/main.dir/AVLTree.cpp.o: CXX_COMPILER__main_unscanned_Debug /hom
 #############################################
 # Link the executable /home/golimghost/Desktop/CProj/Laba_3/bin/main
 
-build /home/golimghost/Desktop/CProj/Laba_3/bin/main: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/Array.cpp.o CMakeFiles/main.dir/OList.cpp.o CMakeFiles/main.dir/DList.cpp.o CMakeFiles/main.dir/Queue.cpp.o CMakeFiles/main.dir/Stack.cpp.o CMakeFiles/main.dir/HashTable.cpp.o CMakeFiles/main.dir/AVLTree.cpp.o
-  FLAGS = -g
+build /home/golimghost/Desktop/CProj/Laba_3/bin/main: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/Array.cpp.o CMakeFiles/main.dir/OList.cpp.o CMakeFiles/main.dir/DList.cpp.o CMakeFiles/main.dir/Queue.cpp.o CMakeFiles/main.dir/Stack.cpp.o CMakeFiles/main.dir/HashTable.cpp.o CMakeFiles/main.dir/AVLTree.cpp.o CMakeFiles/main.dir/testing.cpp.o | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+  FLAGS = --coverage -g
+  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a
   OBJECT_DIR = CMakeFiles/main.dir
   POST_BUILD = :
   PRE_LINK = :
   TARGET_FILE = /home/golimghost/Desktop/CProj/Laba_3/bin/main
   TARGET_PDB = main.dbg
+
+
+#############################################
+# Utility command for test
+
+build CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug && /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test: phony CMakeFiles/test.util
 
 
 #############################################
@@ -144,8 +164,440 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug && /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug && /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug && /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/golimghost/Desktop/CProj/Laba_3/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build googletest/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/googletest && /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build googletest/test: phony googletest/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/googletest && /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build googletest/edit_cache: phony googletest/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/googletest && /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/golimghost/Desktop/CProj/Laba_3 -B/home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build googletest/rebuild_cache: phony googletest/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build googletest/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build googletest/CMakeFiles/install.util: CUSTOM_COMMAND googletest/all
+  COMMAND = cd /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/googletest && /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build googletest/install: phony googletest/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND googletest/all
+  COMMAND = cd /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/googletest && /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build googletest/install/local: phony googletest/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND googletest/all
+  COMMAND = cd /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/googletest && /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build googletest/install/strip: phony googletest/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/golimghost/Desktop/CProj/Laba_3/googletest/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Order-only phony target for gmock
+
+build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depends_target_gtest
+
+build googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: CXX_COMPILER__gmock_unscanned_Debug /home/golimghost/Desktop/CProj/Laba_3/googletest/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
+  DEP_FILE = googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o.d
+  FLAGS = --coverage -g -std=c++20 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  INCLUDES = -I/home/golimghost/Desktop/CProj/Laba_3/. -I/home/golimghost/Desktop/CProj/Laba_3/googletest/googlemock/include -I/home/golimghost/Desktop/CProj/Laba_3/googletest/googlemock -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/include -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest
+  OBJECT_DIR = googletest/googlemock/CMakeFiles/gmock.dir
+  OBJECT_FILE_DIR = googletest/googlemock/CMakeFiles/gmock.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Link the static library lib/libgmock.a
+
+build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o || lib/libgtest.a
+  LANGUAGE_COMPILE_FLAGS = --coverage -g
+  OBJECT_DIR = googletest/googlemock/CMakeFiles/gmock.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgmock.a
+  TARGET_PDB = gmock.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Order-only phony target for gmock_main
+
+build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
+
+build googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: CXX_COMPILER__gmock_main_unscanned_Debug /home/golimghost/Desktop/CProj/Laba_3/googletest/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
+  DEP_FILE = googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.d
+  FLAGS = --coverage -g -std=c++20 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  INCLUDES = -isystem /home/golimghost/Desktop/CProj/Laba_3/. -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googlemock/include -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googlemock -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/include -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest
+  OBJECT_DIR = googletest/googlemock/CMakeFiles/gmock_main.dir
+  OBJECT_FILE_DIR = googletest/googlemock/CMakeFiles/gmock_main.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Link the static library lib/libgmock_main.a
+
+build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o || lib/libgmock.a lib/libgtest.a
+  LANGUAGE_COMPILE_FLAGS = --coverage -g
+  OBJECT_DIR = googletest/googlemock/CMakeFiles/gmock_main.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgmock_main.a
+  TARGET_PDB = gmock_main.a.dbg
+
+
+#############################################
+# Utility command for test
+
+build googletest/googlemock/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/googletest/googlemock && /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build googletest/googlemock/test: phony googletest/googlemock/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build googletest/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/googletest/googlemock && /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build googletest/googlemock/edit_cache: phony googletest/googlemock/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build googletest/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/googletest/googlemock && /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/golimghost/Desktop/CProj/Laba_3 -B/home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build googletest/googlemock/rebuild_cache: phony googletest/googlemock/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build googletest/googlemock/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build googletest/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND googletest/googlemock/all
+  COMMAND = cd /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/googletest/googlemock && /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build googletest/googlemock/install: phony googletest/googlemock/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build googletest/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND googletest/googlemock/all
+  COMMAND = cd /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/googletest/googlemock && /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build googletest/googlemock/install/local: phony googletest/googlemock/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build googletest/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND googletest/googlemock/all
+  COMMAND = cd /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/googletest/googlemock && /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build googletest/googlemock/install/strip: phony googletest/googlemock/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/golimghost/Desktop/CProj/Laba_3/googletest/googlemock/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Order-only phony target for gtest
+
+build cmake_object_order_depends_target_gtest: phony || .
+
+build googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: CXX_COMPILER__gtest_unscanned_Debug /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
+  DEP_FILE = googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d
+  FLAGS = --coverage -g -std=c++20 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  INCLUDES = -I/home/golimghost/Desktop/CProj/Laba_3/. -I/home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/include -I/home/golimghost/Desktop/CProj/Laba_3/googletest/googletest
+  OBJECT_DIR = googletest/googletest/CMakeFiles/gtest.dir
+  OBJECT_FILE_DIR = googletest/googletest/CMakeFiles/gtest.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Link the static library lib/libgtest.a
+
+build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+  LANGUAGE_COMPILE_FLAGS = --coverage -g
+  OBJECT_DIR = googletest/googletest/CMakeFiles/gtest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgtest.a
+  TARGET_PDB = gtest.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Order-only phony target for gtest_main
+
+build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
+
+build googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: CXX_COMPILER__gtest_main_unscanned_Debug /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
+  DEP_FILE = googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d
+  FLAGS = --coverage -g -std=c++20 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  INCLUDES = -I/home/golimghost/Desktop/CProj/Laba_3/. -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/include -isystem /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest
+  OBJECT_DIR = googletest/googletest/CMakeFiles/gtest_main.dir
+  OBJECT_FILE_DIR = googletest/googletest/CMakeFiles/gtest_main.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Link the static library lib/libgtest_main.a
+
+build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o || lib/libgtest.a
+  LANGUAGE_COMPILE_FLAGS = --coverage -g
+  OBJECT_DIR = googletest/googletest/CMakeFiles/gtest_main.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/libgtest_main.a
+  TARGET_PDB = gtest_main.a.dbg
+
+
+#############################################
+# Utility command for test
+
+build googletest/googletest/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/googletest/googletest && /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build googletest/googletest/test: phony googletest/googletest/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build googletest/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/googletest/googletest && /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build googletest/googletest/edit_cache: phony googletest/googletest/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build googletest/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/googletest/googletest && /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/golimghost/Desktop/CProj/Laba_3 -B/home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build googletest/googletest/rebuild_cache: phony googletest/googletest/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build googletest/googletest/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build googletest/googletest/CMakeFiles/install.util: CUSTOM_COMMAND googletest/googletest/all
+  COMMAND = cd /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/googletest/googletest && /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build googletest/googletest/install: phony googletest/googletest/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build googletest/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND googletest/googletest/all
+  COMMAND = cd /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/googletest/googletest && /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build googletest/googletest/install/local: phony googletest/googletest/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build googletest/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND googletest/googletest/all
+  COMMAND = cd /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/googletest/googletest && /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build googletest/googletest/install/strip: phony googletest/googletest/CMakeFiles/install/strip.util
+
 # =============================================================================
 # Target aliases.
+
+build gmock: phony lib/libgmock.a
+
+build gmock_main: phony lib/libgmock_main.a
+
+build gtest: phony lib/libgtest.a
+
+build gtest_main: phony lib/libgtest_main.a
+
+build libgmock.a: phony lib/libgmock.a
+
+build libgmock_main.a: phony lib/libgmock_main.a
+
+build libgtest.a: phony lib/libgtest.a
+
+build libgtest_main.a: phony lib/libgtest_main.a
 
 build main: phony /home/golimghost/Desktop/CProj/Laba_3/bin/main
 
@@ -157,7 +609,28 @@ build main: phony /home/golimghost/Desktop/CProj/Laba_3/bin/main
 #############################################
 # Folder: /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug
 
-build all: phony /home/golimghost/Desktop/CProj/Laba_3/bin/main
+build all: phony /home/golimghost/Desktop/CProj/Laba_3/bin/main googletest/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/googletest
+
+build googletest/all: phony googletest/googlemock/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/googletest/googlemock
+
+build googletest/googlemock/all: phony lib/libgmock.a lib/libgmock_main.a googletest/googletest/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/googletest/googletest
+
+build googletest/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 
 # =============================================================================
 # Built-in targets
@@ -166,14 +639,14 @@ build all: phony /home/golimghost/Desktop/CProj/Laba_3/bin/main
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/golimghost/Desktop/CProj/Laba_3/CMakeLists.txt /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-C.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-CXX.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/golimghost/Desktop/CProj/Laba_3/CMakeLists.txt /home/golimghost/Desktop/CProj/Laba_3/googletest/CMakeLists.txt /home/golimghost/Desktop/CProj/Laba_3/googletest/googlemock/CMakeLists.txt /home/golimghost/Desktop/CProj/Laba_3/googletest/googlemock/cmake/gmock.pc.in /home/golimghost/Desktop/CProj/Laba_3/googletest/googlemock/cmake/gmock_main.pc.in /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/CMakeLists.txt /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/cmake/Config.cmake.in /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/cmake/gtest.pc.in /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/cmake/gtest_main.pc.in /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/cmake/internal_utils.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDependentOption.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakePackageConfigHelpers.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckLibraryExists.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindThreads.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/GNUInstallDirs.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-C.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-CXX.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/golimghost/Desktop/CProj/Laba_3/CMakeLists.txt /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-C.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-CXX.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
+build /home/golimghost/Desktop/CProj/Laba_3/CMakeLists.txt /home/golimghost/Desktop/CProj/Laba_3/googletest/CMakeLists.txt /home/golimghost/Desktop/CProj/Laba_3/googletest/googlemock/CMakeLists.txt /home/golimghost/Desktop/CProj/Laba_3/googletest/googlemock/cmake/gmock.pc.in /home/golimghost/Desktop/CProj/Laba_3/googletest/googlemock/cmake/gmock_main.pc.in /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/CMakeLists.txt /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/cmake/Config.cmake.in /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/cmake/gtest.pc.in /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/cmake/gtest_main.pc.in /home/golimghost/Desktop/CProj/Laba_3/googletest/googletest/cmake/internal_utils.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeDependentOption.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakePackageConfigHelpers.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckLibraryExists.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindThreads.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/GNUInstallDirs.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-C.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-CXX.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake /home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
 
 
 #############################################

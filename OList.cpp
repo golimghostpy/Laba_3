@@ -36,8 +36,7 @@ void OList::push_back(string value){
 
 void OList::delete_front(){
     if(is_empty()){
-        cout << "List is empty" << endl;
-        return;
+        throw out_of_range("List is empty");
     }
 
     ONode* toDel = first;
@@ -48,8 +47,7 @@ void OList::delete_front(){
 
 void OList::delete_back(){
     if(is_empty()){
-        cout << "List is empty" << endl;
-        return;
+        throw out_of_range("List is empty");
     }
 
     ONode* curr = first;
@@ -64,8 +62,7 @@ void OList::delete_back(){
 
 void OList::delete_value(string value) {
     if (is_empty()){
-        cout << "No such a value" << endl;
-        return;
+        throw out_of_range("List is empty");
     }
 
     if (first->data == value) {
@@ -82,8 +79,7 @@ void OList::delete_value(string value) {
     }
 
     if (curr == nullptr) {
-        cout << "No such a value" << endl;
-        return;
+        throw out_of_range("No such a value");
     }
 
     if (curr == last) {
@@ -130,6 +126,15 @@ void OList::print(string delimiter) const{
 }
 
 ONode* OList::find_at(int index) const{
+    if(is_empty())
+    {
+        throw out_of_range("List is empty");
+    }
+    if (index < 0 || index >= size)
+    {
+        throw out_of_range("Index out of range");
+    }
+
     int counter = 0;
     ONode* current = first;
     while (counter < index){

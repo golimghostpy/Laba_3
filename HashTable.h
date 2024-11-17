@@ -13,7 +13,8 @@ struct HashBlock{
     HashBlock(string val1, string val2) : key(val1), value(val2), next(nullptr){}
 };
 
-struct HashList{
+class HashList{
+public:
     HashBlock* first;
 
     HashList() : first(nullptr){}

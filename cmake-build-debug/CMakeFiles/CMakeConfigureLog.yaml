@@ -540,3 +540,36 @@ events:
       Running the CXX compiler's linker: "/usr/bin/ld" "-v"
       GNU ld (GNU Binutils for Debian) 2.42.90.20240720
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/home/golimghost/Documents/clion-2024.2.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "googletest/googletest/cmake/internal_utils.cmake:66 (find_package)"
+      - "googletest/googletest/CMakeLists.txt:83 (config_compiler_and_linker)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fLemqw"
+      binary: "/home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fLemqw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fLemqw'
+        
+        Run Build Command(s): /home/golimghost/Documents/clion-2024.2.1/bin/ninja/linux/x64/ninja -v cmTC_04ffe
+        [1/2] /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_04ffe.dir/src.c.o -c /home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fLemqw/src.c
+        [2/2] : && /usr/bin/cc   CMakeFiles/cmTC_04ffe.dir/src.c.o -o cmTC_04ffe   && :
+        
+      exitCode: 0
+...

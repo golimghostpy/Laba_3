@@ -18,14 +18,18 @@ void Stack::push(string value){
 
 void Stack::pop(){
     if (is_empty()){
-        cout << "Stack is empty" << endl;
-        return;
+        throw out_of_range("Stack is empty");
     }
 
     ONode* new_head = head->next;
     cout << "Popped value: " << head->data << endl;
     delete head;
     head = new_head;
+}
+
+string Stack::get_head() const
+{
+    return head->data;
 }
 
 void Stack::print() const{

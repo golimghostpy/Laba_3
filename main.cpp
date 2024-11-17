@@ -1,16 +1,11 @@
 #include "libs.h"
-#include "AVLTree.h"
+#include "testing.h"
+#include "gtest/gtest.h"
 
 using namespace std;
 
-int main()
+int main(int argc, char **argv)
 {
-    AVLTree test;
-    for (int i = 0; i < 10; ++i)
-    {
-        test.insert(to_string(i));
-    }
-
-    cout << test.to_string_tree() << endl;
+    test_structures(argc, argv);
     return 0;
 }

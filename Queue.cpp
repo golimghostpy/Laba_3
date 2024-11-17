@@ -19,14 +19,18 @@ void Queue::push(string value){
 
 void Queue::pop(){
     if (is_empty()){
-        cout << "Queue is empty" << endl;
-        return;
+        throw out_of_range("Queue is empty");
     }
 
     ONode* new_head = head->next;
     cout << "Popped value: " << head->data << endl;
     delete head;
     head = new_head;
+}
+
+string Queue::get_head() const
+{
+    return head->data;
 }
 
 void Queue::print() const{

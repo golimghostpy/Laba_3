@@ -15,6 +15,7 @@ public:
     bool is_empty() const;
     void push(string);
     void pop();
+    string get_head() const;
     void print() const;
 };
 
