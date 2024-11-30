@@ -1,0 +1,6 @@
+/home/golimghost/Desktop/CProj/Laba_3/bin/CMakeFiles/lb3.dir
+/home/golimghost/Desktop/CProj/Laba_3/bin/CMakeFiles/realisation.dir
+/home/golimghost/Desktop/CProj/Laba_3/bin/CMakeFiles/tests.dir
+/home/golimghost/Desktop/CProj/Laba_3/bin/CMakeFiles/test.dir
+/home/golimghost/Desktop/CProj/Laba_3/bin/CMakeFiles/edit_cache.dir
+/home/golimghost/Desktop/CProj/Laba_3/bin/CMakeFiles/rebuild_cache.dir

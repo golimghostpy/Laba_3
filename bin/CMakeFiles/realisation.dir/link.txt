@@ -1,0 +1,2 @@
+/usr/bin/ar qc librealisation.a CMakeFiles/realisation.dir/src/Array.cpp.o CMakeFiles/realisation.dir/src/AVLTree.cpp.o CMakeFiles/realisation.dir/src/DList.cpp.o CMakeFiles/realisation.dir/src/HashTable.cpp.o CMakeFiles/realisation.dir/src/OList.cpp.o CMakeFiles/realisation.dir/src/Queue.cpp.o CMakeFiles/realisation.dir/src/Stack.cpp.o
+/usr/bin/ranlib librealisation.a

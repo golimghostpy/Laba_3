@@ -1,0 +1,1 @@
+/usr/bin/c++  --coverage CMakeFiles/tests.dir/tests/testing.cpp.o -o tests  -lgtest -lgtest_main librealisation.a
