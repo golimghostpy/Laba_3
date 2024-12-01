@@ -127,6 +127,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named serial
+
+# Build rule for target.
+serial: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 serial
+.PHONY : serial
+
+# fast build rule for target.
+serial/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/build
+.PHONY : serial/fast
+
+#=============================================================================
 # Target rules for targets named lb3
 
 # Build rule for target.
@@ -165,11 +178,36 @@ tests/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
 .PHONY : tests/fast
 
+serial.o: serial.cpp.o
+.PHONY : serial.o
+
+# target to build an object file
+serial.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/serial.cpp.o
+.PHONY : serial.cpp.o
+
+serial.i: serial.cpp.i
+.PHONY : serial.i
+
+# target to preprocess a source file
+serial.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/serial.cpp.i
+.PHONY : serial.cpp.i
+
+serial.s: serial.cpp.s
+.PHONY : serial.s
+
+# target to generate assembly for a file
+serial.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/serial.cpp.s
+.PHONY : serial.cpp.s
+
 src/AVLTree.o: src/AVLTree.cpp.o
 .PHONY : src/AVLTree.o
 
 # target to build an object file
 src/AVLTree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/src/AVLTree.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realisation.dir/build.make CMakeFiles/realisation.dir/src/AVLTree.cpp.o
 .PHONY : src/AVLTree.cpp.o
 
@@ -178,6 +216,7 @@ src/AVLTree.i: src/AVLTree.cpp.i
 
 # target to preprocess a source file
 src/AVLTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/src/AVLTree.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realisation.dir/build.make CMakeFiles/realisation.dir/src/AVLTree.cpp.i
 .PHONY : src/AVLTree.cpp.i
 
@@ -186,6 +225,7 @@ src/AVLTree.s: src/AVLTree.cpp.s
 
 # target to generate assembly for a file
 src/AVLTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/src/AVLTree.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realisation.dir/build.make CMakeFiles/realisation.dir/src/AVLTree.cpp.s
 .PHONY : src/AVLTree.cpp.s
 
@@ -194,6 +234,7 @@ src/Array.o: src/Array.cpp.o
 
 # target to build an object file
 src/Array.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/src/Array.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realisation.dir/build.make CMakeFiles/realisation.dir/src/Array.cpp.o
 .PHONY : src/Array.cpp.o
 
@@ -202,6 +243,7 @@ src/Array.i: src/Array.cpp.i
 
 # target to preprocess a source file
 src/Array.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/src/Array.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realisation.dir/build.make CMakeFiles/realisation.dir/src/Array.cpp.i
 .PHONY : src/Array.cpp.i
 
@@ -210,6 +252,7 @@ src/Array.s: src/Array.cpp.s
 
 # target to generate assembly for a file
 src/Array.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/src/Array.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realisation.dir/build.make CMakeFiles/realisation.dir/src/Array.cpp.s
 .PHONY : src/Array.cpp.s
 
@@ -218,6 +261,7 @@ src/DList.o: src/DList.cpp.o
 
 # target to build an object file
 src/DList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/src/DList.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realisation.dir/build.make CMakeFiles/realisation.dir/src/DList.cpp.o
 .PHONY : src/DList.cpp.o
 
@@ -226,6 +270,7 @@ src/DList.i: src/DList.cpp.i
 
 # target to preprocess a source file
 src/DList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/src/DList.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realisation.dir/build.make CMakeFiles/realisation.dir/src/DList.cpp.i
 .PHONY : src/DList.cpp.i
 
@@ -234,6 +279,7 @@ src/DList.s: src/DList.cpp.s
 
 # target to generate assembly for a file
 src/DList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/src/DList.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realisation.dir/build.make CMakeFiles/realisation.dir/src/DList.cpp.s
 .PHONY : src/DList.cpp.s
 
@@ -242,6 +288,7 @@ src/HashTable.o: src/HashTable.cpp.o
 
 # target to build an object file
 src/HashTable.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/src/HashTable.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realisation.dir/build.make CMakeFiles/realisation.dir/src/HashTable.cpp.o
 .PHONY : src/HashTable.cpp.o
 
@@ -250,6 +297,7 @@ src/HashTable.i: src/HashTable.cpp.i
 
 # target to preprocess a source file
 src/HashTable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/src/HashTable.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realisation.dir/build.make CMakeFiles/realisation.dir/src/HashTable.cpp.i
 .PHONY : src/HashTable.cpp.i
 
@@ -258,6 +306,7 @@ src/HashTable.s: src/HashTable.cpp.s
 
 # target to generate assembly for a file
 src/HashTable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/src/HashTable.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realisation.dir/build.make CMakeFiles/realisation.dir/src/HashTable.cpp.s
 .PHONY : src/HashTable.cpp.s
 
@@ -266,6 +315,7 @@ src/OList.o: src/OList.cpp.o
 
 # target to build an object file
 src/OList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/src/OList.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realisation.dir/build.make CMakeFiles/realisation.dir/src/OList.cpp.o
 .PHONY : src/OList.cpp.o
 
@@ -274,6 +324,7 @@ src/OList.i: src/OList.cpp.i
 
 # target to preprocess a source file
 src/OList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/src/OList.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realisation.dir/build.make CMakeFiles/realisation.dir/src/OList.cpp.i
 .PHONY : src/OList.cpp.i
 
@@ -282,6 +333,7 @@ src/OList.s: src/OList.cpp.s
 
 # target to generate assembly for a file
 src/OList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/src/OList.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realisation.dir/build.make CMakeFiles/realisation.dir/src/OList.cpp.s
 .PHONY : src/OList.cpp.s
 
@@ -290,6 +342,7 @@ src/Queue.o: src/Queue.cpp.o
 
 # target to build an object file
 src/Queue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/src/Queue.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realisation.dir/build.make CMakeFiles/realisation.dir/src/Queue.cpp.o
 .PHONY : src/Queue.cpp.o
 
@@ -298,6 +351,7 @@ src/Queue.i: src/Queue.cpp.i
 
 # target to preprocess a source file
 src/Queue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/src/Queue.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realisation.dir/build.make CMakeFiles/realisation.dir/src/Queue.cpp.i
 .PHONY : src/Queue.cpp.i
 
@@ -306,6 +360,7 @@ src/Queue.s: src/Queue.cpp.s
 
 # target to generate assembly for a file
 src/Queue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/src/Queue.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realisation.dir/build.make CMakeFiles/realisation.dir/src/Queue.cpp.s
 .PHONY : src/Queue.cpp.s
 
@@ -314,6 +369,7 @@ src/Stack.o: src/Stack.cpp.o
 
 # target to build an object file
 src/Stack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/src/Stack.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realisation.dir/build.make CMakeFiles/realisation.dir/src/Stack.cpp.o
 .PHONY : src/Stack.cpp.o
 
@@ -322,6 +378,7 @@ src/Stack.i: src/Stack.cpp.i
 
 # target to preprocess a source file
 src/Stack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/src/Stack.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realisation.dir/build.make CMakeFiles/realisation.dir/src/Stack.cpp.i
 .PHONY : src/Stack.cpp.i
 
@@ -330,6 +387,7 @@ src/Stack.s: src/Stack.cpp.s
 
 # target to generate assembly for a file
 src/Stack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial.dir/build.make CMakeFiles/serial.dir/src/Stack.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realisation.dir/build.make CMakeFiles/realisation.dir/src/Stack.cpp.s
 .PHONY : src/Stack.cpp.s
 
@@ -392,7 +450,11 @@ help:
 	@echo "... test"
 	@echo "... lb3"
 	@echo "... realisation"
+	@echo "... serial"
 	@echo "... tests"
+	@echo "... serial.o"
+	@echo "... serial.i"
+	@echo "... serial.s"
 	@echo "... src/AVLTree.o"
 	@echo "... src/AVLTree.i"
 	@echo "... src/AVLTree.s"

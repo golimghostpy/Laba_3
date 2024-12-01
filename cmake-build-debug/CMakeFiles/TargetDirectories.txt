@@ -1,0 +1,7 @@
+/home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/CMakeFiles/serial.dir
+/home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/CMakeFiles/lb3.dir
+/home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/CMakeFiles/realisation.dir
+/home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/CMakeFiles/tests.dir
+/home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/CMakeFiles/test.dir
+/home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/golimghost/Desktop/CProj/Laba_3/cmake-build-debug/CMakeFiles/rebuild_cache.dir

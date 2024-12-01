@@ -1,0 +1,1 @@
+/usr/bin/c++  --coverage CMakeFiles/serial.dir/serial.cpp.o CMakeFiles/serial.dir/src/Array.cpp.o CMakeFiles/serial.dir/src/AVLTree.cpp.o CMakeFiles/serial.dir/src/DList.cpp.o CMakeFiles/serial.dir/src/HashTable.cpp.o CMakeFiles/serial.dir/src/OList.cpp.o CMakeFiles/serial.dir/src/Queue.cpp.o CMakeFiles/serial.dir/src/Stack.cpp.o -o serial

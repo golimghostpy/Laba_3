@@ -1,0 +1,78 @@
+        -:    0:Source:/home/golimghost/Desktop/CProj/Laba_3/includes/HashTable.h
+        -:    0:Graph:CMakeFiles/serial.dir/serial.cpp.gcno
+        -:    0:Data:CMakeFiles/serial.dir/serial.cpp.gcda
+        -:    0:Runs:0
+        -:    1:#ifndef HASHTABLE_H_INCLUDED
+        -:    2:#define HASHTABLE_H_INCLUDED
+        -:    3:
+        -:    4:#include "libs.h"
+        -:    5:#include "OList.h"
+        -:    6:#include "Array.h"
+        -:    7:
+        -:    8:struct HashBlock{
+        -:    9:    string key;
+        -:   10:    string value;
+        -:   11:    HashBlock* next;
+        -:   12:
+        -:   13:    HashBlock(string val1, string val2) : key(val1), value(val2), next(nullptr){}
+        -:   14:};
+        -:   15:
+        -:   16:class HashList{
+        -:   17:public:
+        -:   18:    HashBlock* first;
+        -:   19:
+function HashList::HashList() called 0 returned 0% blocks executed 0%
+    #####:   20:    HashList() : first(nullptr){}
+        -:   21:
+        -:   22:    bool is_empty() const;
+        -:   23:    void push_back(string, string);
+        -:   24:    void delete_value(string);
+        -:   25:    void print(string) const;
+        -:   26:};
+        -:   27:
+        -:   28:struct HashBucket{
+        -:   29:    int key;
+        -:   30:    HashList data;
+        -:   31:
+function HashBucket::HashBucket() called 0 returned 0% blocks executed 0%
+    #####:   32:    HashBucket() : key(0) {}
+    %%%%%:   32-block  0
+call    0 never executed
+        -:   33:    HashBucket(int val) : key(val){}
+        -:   34:};
+        -:   35:
+        -:   36:class HashTable{
+        -:   37:private:
+        -:   38:    int capacity;
+        -:   39:
+        -:   40:public:
+        -:   41:    int size;
+        -:   42:    HashBucket* data;
+        -:   43:
+function HashTable::HashTable(int) called 0 returned 0% blocks executed 0%
+    #####:   44:    HashTable(int initialCapacity = 30) : size(0), capacity(initialCapacity){
+    #####:   45:        data = new HashBucket[capacity];
+    %%%%%:   45-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:   45-block  1
+    %%%%%:   45-block  2
+call    2 never executed
+    %%%%%:   45-block  3
+call    3 never executed
+    %%%%%:   45-block  4
+call    4 never executed
+    %%%%%:   45-block  5
+branch  5 never executed
+branch  6 never executed (fallthrough)
+    #####:   46:    }
+        -:   47:
+        -:   48:    void set(string, string);
+        -:   49:    string get_values(string) const;
+        -:   50:    void delete_value(const string&);
+        -:   51:    void print() const;
+        -:   52:};
+        -:   53:
+        -:   54:int hash_find(const string&);
+        -:   55:
+        -:   56:#endif // HASHTABLE_H_INCLUDED

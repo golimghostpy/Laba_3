@@ -1,0 +1,40 @@
+        -:    0:Source:/home/golimghost/Desktop/CProj/Laba_3/includes/DList.h
+        -:    0:Graph:./serial.cpp.gcno
+        -:    0:Data:./serial.cpp.gcda
+        -:    0:Runs:0
+        -:    1:#ifndef TLIST_H_INCLUDED
+        -:    2:#define TLIST_H_INCLUDED
+        -:    3:
+        -:    4:#include "libs.h"
+        -:    5:#include "OList.h"
+        -:    6:
+        -:    7:struct TNode{
+        -:    8:    string data;
+        -:    9:    TNode* next;
+        -:   10:    TNode* prev;
+        -:   11:
+        -:   12:    TNode(string val) : data(val), next(nullptr), prev(nullptr){}
+        -:   13:};
+        -:   14:
+        -:   15:class TList{
+        -:   16:private:
+        -:   17:    TNode* first;
+        -:   18:    TNode* last;
+        -:   19:
+        -:   20:public:
+        -:   21:    int size;
+function TList::TList() called 0 returned 0% blocks executed 0%
+    #####:   22:    TList() : size(0), first(nullptr), last(nullptr){}
+        -:   23:
+        -:   24:    bool is_empty() const;
+        -:   25:    void push_front(string);
+        -:   26:    void push_back(string);
+        -:   27:    void delete_front();
+        -:   28:    void delete_back();
+        -:   29:    void delete_value(string);
+        -:   30:    int find_value(string) const;
+        -:   31:    string print(string) const;
+        -:   32:    TNode* find_at(int) const;
+        -:   33:};
+        -:   34:
+        -:   35:#endif // TLIST_H_INCLUDED

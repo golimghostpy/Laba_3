@@ -5,11 +5,10 @@
 #include "OList.h"
 
 class Stack{
-private:
+public:
     ONode* head;
     ONode* tail;
 
-public:
     Stack() : head(nullptr), tail(nullptr){}
 
     bool is_empty() const;

@@ -35,10 +35,10 @@ struct HashBucket{
 
 class HashTable{
 private:
-    int size;
     int capacity;
 
 public:
+    int size;
     HashBucket* data;
 
     HashTable(int initialCapacity = 30) : size(0), capacity(initialCapacity){

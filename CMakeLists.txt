@@ -6,6 +6,17 @@ set(CMAKE_CXX_STANDARD 20)
 include_directories(/usr/local/include)
 include_directories(/includes)
 
+add_executable(serial
+        serial.cpp
+        src/Array.cpp
+        src/AVLTree.cpp
+        src/DList.cpp
+        src/HashTable.cpp
+        src/OList.cpp
+        src/Queue.cpp
+        src/Stack.cpp
+)
+
 add_executable(lb3 src/main.cpp)
 
 add_library(realisation

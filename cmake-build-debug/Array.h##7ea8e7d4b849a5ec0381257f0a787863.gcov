@@ -1,0 +1,46 @@
+        -:    0:Source:/home/golimghost/Desktop/CProj/Laba_3/includes/Array.h
+        -:    0:Graph:CMakeFiles/serial.dir/serial.cpp.gcno
+        -:    0:Data:CMakeFiles/serial.dir/serial.cpp.gcda
+        -:    0:Runs:0
+        -:    1://
+        -:    2:// Created by golimghost on 11/16/24.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef ARRAY_H
+        -:    6:#define ARRAY_H
+        -:    7:
+        -:    8:#include "libs.h"
+        -:    9:
+        -:   10:class Array {
+        -:   11:public:
+        -:   12:    int size;
+        -:   13:    int capacity;
+        -:   14:
+function Array::Array(int) called 0 returned 0% blocks executed 0%
+    #####:   15:    Array(int initialCapacity = 1) : size(0), capacity(initialCapacity){
+    #####:   16:        data = new string[capacity];
+    %%%%%:   16-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:   16-block  1
+    %%%%%:   16-block  2
+    %%%%%:   16-block  3
+call    2 never executed
+    %%%%%:   16-block  4
+call    3 never executed
+    %%%%%:   16-block  5
+branch  4 never executed
+branch  5 never executed (fallthrough)
+    #####:   17:    }
+        -:   18:
+        -:   19:    void push_back(string);
+        -:   20:    void insert_at(int, string);
+        -:   21:    string get_at(int) const;
+        -:   22:    void remove_at(int);
+        -:   23:    void set_at(int, string) const;
+        -:   24:    string print() const;
+        -:   25:private:
+        -:   26:    string* data;
+        -:   27:};
+        -:   28:
+        -:   29:#endif //ARRAY_H

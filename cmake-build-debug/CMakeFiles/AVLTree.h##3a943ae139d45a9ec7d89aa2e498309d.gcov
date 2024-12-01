@@ -1,0 +1,43 @@
+        -:    0:Source:/home/golimghost/Desktop/CProj/Laba_3/includes/AVLTree.h
+        -:    0:Graph:serial.dir/serial.cpp.gcno
+        -:    0:Data:serial.dir/serial.cpp.gcda
+        -:    0:Runs:0
+        -:    1:#ifndef AVLTREE_H_INCLUDED
+        -:    2:#define AVLTREE_H_INCLUDED
+        -:    3:
+        -:    4:#include "libs.h"
+        -:    5:
+        -:    6:struct TreeNode {
+        -:    7:    string key;
+        -:    8:    TreeNode* left;
+        -:    9:    TreeNode* right;
+        -:   10:    int height;
+        -:   11:
+        -:   12:    string to_string_node();
+        -:   13:};
+        -:   14:
+        -:   15:class AVLTree {
+        -:   16:public:
+        -:   17:    TreeNode* root;
+        -:   18:
+function AVLTree::AVLTree() called 0 returned 0% blocks executed 0%
+    #####:   19:    AVLTree() : root(nullptr) {}
+        -:   20:
+        -:   21:    TreeNode* get_root();
+        -:   22:    void insert(string);
+        -:   23:    bool search(string) const;
+        -:   24:    void remove(string);
+        -:   25:    void print() const;
+        -:   26:    int getHeight(TreeNode*) const;
+        -:   27:    TreeNode* minValueNode(TreeNode*) const;
+        -:   28:    int getBalance(TreeNode*);
+        -:   29:    TreeNode* insertNode(TreeNode*, string);
+        -:   30:    bool searchNode(TreeNode*, string) const;
+        -:   31:    TreeNode* removeNode(TreeNode*, string);
+        -:   32:    void printNode(TreeNode*, int) const;
+        -:   33:    TreeNode* rotateRight(TreeNode*);
+        -:   34:    TreeNode* rotateLeft(TreeNode*);
+        -:   35:    string to_string_tree() const;
+        -:   36:};
+        -:   37:
+        -:   38:#endif // AVLTREE_H_INCLUDED

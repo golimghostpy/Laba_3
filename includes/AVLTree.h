@@ -13,10 +13,9 @@ struct TreeNode {
 };
 
 class AVLTree {
-private:
+public:
     TreeNode* root;
 
-public:
     AVLTree() : root(nullptr) {}
 
     TreeNode* get_root();

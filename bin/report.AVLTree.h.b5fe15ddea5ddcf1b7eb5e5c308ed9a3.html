@@ -26,7 +26,7 @@
     </tr>
     <tr>
       <th scope="row">Date:</th>
-      <td>2024-12-01 19:32:40</td>
+      <td>2024-12-02 00:54:28</td>
     </tr>
   </table>
 </div>
@@ -70,7 +70,7 @@
       <th>Call count</th>
       <th>Block coverage</th>
     </tr>
-    <tr><td><a href="#l20">AVLTree::AVLTree() (line 20)</a></td><td>called 15 times</td><td>100.0%</td></tr>
+    <tr><td><a href="#l19">AVLTree::AVLTree() (line 19)</a></td><td>called 15 times</td><td>100.0%</td></tr>
   </table>
 </details>
 
@@ -194,7 +194,7 @@
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="n">private</span><span class="o">:</span></td>
+      <td class="src "><span class="n">public</span><span class="o">:</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l17" href="#l17">17</a></td>
@@ -214,151 +214,144 @@
       <td class="lineno"><a id="l19" href="#l19">19</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="n">public</span><span class="o">:</span></td>
+      <td class="linecount coveredLine">15</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">AVLTree</span><span class="p">()</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">root</span><span class="p">(</span><span class="n">nullptr</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l20" href="#l20">20</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">15</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="n">AVLTree</span><span class="p">()</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">root</span><span class="p">(</span><span class="n">nullptr</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span></td>
+      <td class="linecount "></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l21" href="#l21">21</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "></td>
+      <td class="src "><span class="w">    </span><span class="n">TreeNode</span><span class="o">*</span><span class="w"> </span><span class="n">get_root</span><span class="p">();</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l22" href="#l22">22</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="n">TreeNode</span><span class="o">*</span><span class="w"> </span><span class="n">get_root</span><span class="p">();</span></td>
+      <td class="src "><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">insert</span><span class="p">(</span><span class="n">string</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l23" href="#l23">23</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">insert</span><span class="p">(</span><span class="n">string</span><span class="p">);</span></td>
+      <td class="src "><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">search</span><span class="p">(</span><span class="n">string</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l24" href="#l24">24</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">search</span><span class="p">(</span><span class="n">string</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span></td>
+      <td class="src "><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">remove</span><span class="p">(</span><span class="n">string</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l25" href="#l25">25</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">remove</span><span class="p">(</span><span class="n">string</span><span class="p">);</span></td>
+      <td class="src "><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">print</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l26" href="#l26">26</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">print</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span></td>
+      <td class="src "><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="nf">getHeight</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l27" href="#l27">27</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="nf">getHeight</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span></td>
+      <td class="src "><span class="w">    </span><span class="n">TreeNode</span><span class="o">*</span><span class="w"> </span><span class="nf">minValueNode</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l28" href="#l28">28</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="n">TreeNode</span><span class="o">*</span><span class="w"> </span><span class="nf">minValueNode</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span></td>
+      <td class="src "><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="nf">getBalance</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l29" href="#l29">29</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="nf">getBalance</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span><span class="p">);</span></td>
+      <td class="src "><span class="w">    </span><span class="n">TreeNode</span><span class="o">*</span><span class="w"> </span><span class="nf">insertNode</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="n">string</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l30" href="#l30">30</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="n">TreeNode</span><span class="o">*</span><span class="w"> </span><span class="nf">insertNode</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="n">string</span><span class="p">);</span></td>
+      <td class="src "><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">searchNode</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="n">string</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l31" href="#l31">31</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">searchNode</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="n">string</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span></td>
+      <td class="src "><span class="w">    </span><span class="n">TreeNode</span><span class="o">*</span><span class="w"> </span><span class="nf">removeNode</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="n">string</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l32" href="#l32">32</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="n">TreeNode</span><span class="o">*</span><span class="w"> </span><span class="nf">removeNode</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="n">string</span><span class="p">);</span></td>
+      <td class="src "><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">printNode</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l33" href="#l33">33</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">printNode</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span></td>
+      <td class="src "><span class="w">    </span><span class="n">TreeNode</span><span class="o">*</span><span class="w"> </span><span class="nf">rotateRight</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l34" href="#l34">34</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="n">TreeNode</span><span class="o">*</span><span class="w"> </span><span class="nf">rotateRight</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span><span class="p">);</span></td>
+      <td class="src "><span class="w">    </span><span class="n">TreeNode</span><span class="o">*</span><span class="w"> </span><span class="nf">rotateLeft</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l35" href="#l35">35</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="n">TreeNode</span><span class="o">*</span><span class="w"> </span><span class="nf">rotateLeft</span><span class="p">(</span><span class="n">TreeNode</span><span class="o">*</span><span class="p">);</span></td>
+      <td class="src "><span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="nf">to_string_tree</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l36" href="#l36">36</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="nf">to_string_tree</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span></td>
+      <td class="src "><span class="p">};</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l37" href="#l37">37</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="p">};</span></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l38" href="#l38">38</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l39" href="#l39">39</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
       <td class="src "><span class="cp">#endif </span><span class="c1">// AVLTREE_H_INCLUDED</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l40" href="#l40">40</a></td>
+      <td class="lineno"><a id="l39" href="#l39">39</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>

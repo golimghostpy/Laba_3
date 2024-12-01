@@ -14,11 +14,11 @@ struct TNode{
 
 class TList{
 private:
-    int size;
     TNode* first;
     TNode* last;
 
 public:
+    int size;
     TList() : size(0), first(nullptr), last(nullptr){}
 
     bool is_empty() const;

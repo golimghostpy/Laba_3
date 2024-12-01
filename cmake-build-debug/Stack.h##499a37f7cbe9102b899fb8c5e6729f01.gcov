@@ -1,0 +1,26 @@
+        -:    0:Source:/home/golimghost/Desktop/CProj/Laba_3/includes/Stack.h
+        -:    0:Graph:CMakeFiles/serial.dir/serial.cpp.gcno
+        -:    0:Data:CMakeFiles/serial.dir/serial.cpp.gcda
+        -:    0:Runs:0
+        -:    1:#ifndef STACK_H_INCLUDED
+        -:    2:#define STACK_H_INCLUDED
+        -:    3:
+        -:    4:#include "libs.h"
+        -:    5:#include "OList.h"
+        -:    6:
+        -:    7:class Stack{
+        -:    8:public:
+        -:    9:    ONode* head;
+        -:   10:    ONode* tail;
+        -:   11:
+function Stack::Stack() called 0 returned 0% blocks executed 0%
+    #####:   12:    Stack() : head(nullptr), tail(nullptr){}
+        -:   13:
+        -:   14:    bool is_empty() const;
+        -:   15:    void push(string);
+        -:   16:    void pop();
+        -:   17:    string get_head() const;
+        -:   18:    string print() const;
+        -:   19:};
+        -:   20:
+        -:   21:#endif // STACK_H_INCLUDED

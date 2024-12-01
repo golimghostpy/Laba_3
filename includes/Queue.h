@@ -5,11 +5,10 @@
 #include "OList.h"
 
 class Queue{
-private:
+public:
     ONode* head;
     ONode* tail;
 
-public:
     Queue() : head(nullptr), tail(nullptr){}
 
     bool is_empty() const;
