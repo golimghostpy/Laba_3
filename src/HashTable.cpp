@@ -1,55 +1,5 @@
 #include "../includes/HashTable.h"
 
-void HashTable::push_back(HashBucket& element) {
-    if (size == capacity) {
-        capacity *= 2;
-        HashBucket* newData = new HashBucket[capacity];
-        for (int i = 0; i < size; i++) {
-            newData[i] = data[i];
-        }
-        delete[] data;
-        data = newData;
-    }
-    data[size++] = element;
-}
-
-void HashTable::insert_at(int index, HashBucket& element) {
-    if (index < 0 || index > size) {
-        throw out_of_range("Index out of range");
-    }
-    if (size == capacity) {
-        capacity *= 2;
-        HashBucket* newData = new HashBucket[capacity];
-        for (int i = 0; i < size; i++) {
-            newData[i] = data[i];
-        }
-        delete[] data;
-        data = newData;
-    }
-    for (int i = size; i > index; i--) {
-        data[i] = data[i - 1];
-    }
-    data[index] = element;
-    ++size;
-}
-
-void HashTable::remove_at(int index) {
-    if (index < 0 || index >= size) {
-        throw out_of_range("Index out of range");
-    }
-    for (int i = index; i < size - 1; i++) {
-        data[i] = data[i + 1];
-    }
-    --size;
-}
-
-void HashTable::set_at(int index, HashBucket& element) const{
-    if (index < 0 || index >= size) {
-        throw out_of_range("Index out of range");
-    }
-    data[index] = element;
-}
-
 bool HashList::is_empty() const{
     return first == nullptr;
 }
@@ -67,11 +17,6 @@ void HashList::push_back(string key, string value){
 }
 
 void HashList::delete_value(string key) {
-    if (is_empty()){
-        cout << "No such a key" << endl;
-        return;
-    }
-
     HashBlock* curr = first;
     HashBlock* prev = nullptr;
 
@@ -80,12 +25,14 @@ void HashList::delete_value(string key) {
         curr = curr->next;
     }
 
-    if (curr == nullptr) {
-        cout << "No such a key" << endl;
+    if (prev == nullptr)
+    {
+        delete curr;
         return;
     }
 
     prev->next = curr->next;
+
     delete curr;
 }
 
@@ -104,7 +51,7 @@ void HashList::print(string delimiter) const{
     cout << curr->key << ":" << curr->value << endl;
 }
 
-int HashTable::hash(const string& key) const{
+int hash_find(const string& key){
     int summ = 0;
     for (auto i: key){
         summ += static_cast<int>(i);
@@ -114,7 +61,7 @@ int HashTable::hash(const string& key) const{
 }
 
 void HashTable::set(string key, string value){
-    int valKey = hash(key);
+    int valKey = hash_find(key);
     for (auto i = (data[valKey].data).first; i != nullptr; i = i->next){
         if (i->key == key){
             cerr << "There is same key" << endl;
@@ -125,7 +72,7 @@ void HashTable::set(string key, string value){
 }
 
 string HashTable::get_values(string key) const{
-    int hashKey = hash(key);
+    int hashKey = hash_find(key);
 
     auto i = (data[hashKey].data).first;
     for (i; i != nullptr; i = i->next){
@@ -138,12 +85,16 @@ string HashTable::get_values(string key) const{
 }
 
 void HashTable::delete_value(const string& key){
-    int hashKey = hash(key);
+    int hashKey = hash_find(key);
 
     for (auto i = (data[hashKey].data).first; i != nullptr; i = i->next){
-        if (i->key == key) delete_value(key); return;
+        if (i->key == key)
+        {
+            (data[hashKey].data).delete_value(key);
+            return;
+        }
     }
-    cout << "No such a key" << endl;
+    throw out_of_range("No such a key");
 }
 
 void HashTable::print() const{

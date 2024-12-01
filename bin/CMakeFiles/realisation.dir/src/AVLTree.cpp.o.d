@@ -156,5 +156,4 @@ CMakeFiles/realisation.dir/src/AVLTree.cpp.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc \
- /home/golimghost/Desktop/CProj/Laba_3/src/../includes/OList.h
+ /usr/include/c++/13/bits/istream.tcc

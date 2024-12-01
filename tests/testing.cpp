@@ -246,7 +246,7 @@ TEST(TList, Delete_front)
     TList testList;
 
     ASSERT_TRUE(testList.is_empty());
-    ASSERT_THROW(testList.delete_front(), std::out_of_range);
+    ASSERT_THROW(testList.delete_front(), out_of_range);
 
     testList.push_front("hello");
     testList.push_front("bye");
@@ -412,7 +412,208 @@ TEST(Queue, Print)
 }
 
 // AVLTree testing --------------------------------------------------
+TEST(Tree, Create)
+{
+    auto testTree = new AVLTree;
 
+    ASSERT_TRUE(testTree != nullptr);
+}
+
+TEST(Tree, Get_root)
+{
+    AVLTree testTree;
+
+    ASSERT_TRUE(testTree.get_root() == nullptr);
+
+    testTree.insert("hello");
+    ASSERT_TRUE(testTree.get_root()->key == "hello");
+}
+
+TEST(Tree, Min_value_node)
+{
+    AVLTree testTree;
+    testTree.insert("30");
+    testTree.insert("20");
+    testTree.insert("40");
+
+    ASSERT_TRUE(testTree.minValueNode(testTree.get_root())->key == "20");
+}
+
+TEST(Tree, Insert) {
+    AVLTree testTree;
+    testTree.insert("30");
+    testTree.insert("20");
+    testTree.insert("40");
+
+    ASSERT_TRUE(testTree.search("30"));
+    ASSERT_TRUE(testTree.search("20"));
+    ASSERT_TRUE(testTree.search("40"));
+    ASSERT_FALSE(testTree.search("10"));
+}
+
+TEST(Tree, Remove) {
+    AVLTree testTree;
+    testTree.insert("30");
+    testTree.insert("20");
+    testTree.insert("40");
+    testTree.insert("10");
+
+    ASSERT_TRUE(testTree.search("10"));
+
+    testTree.remove("10");
+    ASSERT_FALSE(testTree.search("10"));
+}
+
+TEST(Tree, Insert_and_balance) {
+    AVLTree testTree;
+    testTree.insert("30");
+    testTree.insert("20");
+    testTree.insert("10");
+    testTree.insert("10");
+
+    ASSERT_TRUE(testTree.get_root()->key == "20");
+
+    AVLTree testTree1;
+    testTree1.insert("10");
+    testTree1.insert("20");
+    testTree1.insert("30");
+
+    ASSERT_TRUE(testTree1.get_root()->key == "20");
+
+    AVLTree testTree2;
+    testTree2.insert("30");
+    testTree2.insert("10");
+    testTree2.insert("20");
+
+    ASSERT_TRUE(testTree2.get_root()->key == "20");
+
+    AVLTree testTree3;
+    testTree3.insert("10");
+    testTree3.insert("30");
+    testTree3.insert("20");
+
+    ASSERT_TRUE(testTree3.get_root()->key == "20");
+}
+
+TEST(Tree, Remove_and_balance) {
+    AVLTree testTree;
+    testTree.insert("2");
+    testTree.insert("1");
+    testTree.insert("3");
+    testTree.insert("4");
+
+    ASSERT_TRUE(testTree.get_root()->key == "2");
+
+    testTree.remove("1");
+    ASSERT_TRUE(testTree.get_root()->key == "3");
+
+    AVLTree testTree1;
+    testTree1.insert("3");
+    testTree1.insert("2");
+    testTree1.insert("4");
+    testTree1.insert("1");
+
+    ASSERT_TRUE(testTree1.get_root()->key == "3");
+
+    testTree1.remove("4");
+    ASSERT_TRUE(testTree1.get_root()->key == "2");
+
+    AVLTree testTree2;
+    testTree2.insert("3");
+    testTree2.insert("2");
+    testTree2.insert("4");
+    testTree2.insert("1");
+
+    ASSERT_TRUE(testTree2.get_root()->key == "3");
+
+    testTree2.remove("2");
+    ASSERT_TRUE(testTree2.get_root()->key == "3");
+}
+
+TEST(Tree, Print_empty_tree) {
+    AVLTree testTree;
+    testing::internal::CaptureStdout();
+    testTree.print();
+    string output = testing::internal::GetCapturedStdout();
+    ASSERT_EQ(output, "");
+}
+
+TEST(Tree, Print_nonempty_tree) {
+    AVLTree testTree;
+    testTree.insert("30");
+    testTree.insert("20");
+    testTree.insert("40");
+
+    testing::internal::CaptureStdout();
+    testTree.print();
+    string output = testing::internal::GetCapturedStdout();
+
+    ASSERT_TRUE(output.find("30") != string::npos);
+    ASSERT_TRUE(output.find("20") != string::npos);
+    ASSERT_TRUE(output.find("40") != string::npos);
+}
+
+TEST(Tree, To_string_tree) {
+    AVLTree testTree;
+    ASSERT_EQ(testTree.to_string_tree(), "");
+    testTree.insert("30");
+    testTree.insert("20");
+    testTree.insert("40");
+
+    ASSERT_EQ(testTree.to_string_tree(), "30 20 40 ");
+}
+
+// HashTable testing --------------------------------------------------
+TEST(HashTable, Insert_and_get) {
+    HashTable testTable;
+    testTable.set("key1", "value1");
+    ASSERT_EQ(testTable.get_values("key1"), "value1");
+
+    testTable.set("key2", "value2");
+    ASSERT_EQ(testTable.get_values("key2"), "value2");
+}
+
+TEST(HashTable, Get_non_exist) {
+    HashTable testTable;
+    ASSERT_EQ(testTable.get_values("nonexistent_key"), "No such a key");
+}
+
+TEST(HashTable, Insert_duplicate) {
+    HashTable testTable;
+    testTable.set("key1", "value1");
+    testTable.set("key1", "value2");
+    ASSERT_EQ(testTable.get_values("key1"), "value1");
+}
+
+TEST(HashTable, Delete) {
+    HashTable testTable;
+    ASSERT_THROW(testTable.delete_value("key1"), out_of_range);
+
+    testTable.set("key1", "value1");
+    ASSERT_THROW(testTable.delete_value("key2"), out_of_range);
+
+    testTable.delete_value("key1");
+    ASSERT_EQ(testTable.get_values("key1"), "No such a key");
+}
+
+TEST(HashTable, Print) {
+    HashTable testTable;
+    testTable.set("key1", "value1");
+    testTable.set("key2", "value2");
+
+    testing::internal::CaptureStdout();
+    testTable.print();
+    string output = testing::internal::GetCapturedStdout();
+    ASSERT_NE(output.find("0: "), string::npos);
+}
+
+TEST(HashTable, Insert_alot) {
+    HashTable testTable;
+    for (int i = 0; i < 100; ++i) {
+        testTable.set("key" + to_string(i), "value" + to_string(i));
+    }
+    ASSERT_EQ(testTable.get_values("key99"), "value99");
+}
 
 int main(int argc, char **argv)
 {

@@ -19,6 +19,7 @@ private:
 public:
     AVLTree() : root(nullptr) {}
 
+    TreeNode* get_root();
     void insert(string);
     bool search(string) const;
     void remove(string);

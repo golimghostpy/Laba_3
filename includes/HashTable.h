@@ -35,24 +35,22 @@ struct HashBucket{
 
 class HashTable{
 private:
-    HashBucket* data;
     int size;
     int capacity;
 
 public:
+    HashBucket* data;
+
     HashTable(int initialCapacity = 30) : size(0), capacity(initialCapacity){
         data = new HashBucket[capacity];
     }
 
-    void push_back(HashBucket&);
-    void insert_at(int, HashBucket&);
-    void remove_at(int);
-    void set_at(int, HashBucket&) const;
-    int hash(const string&) const;
     void set(string, string);
     string get_values(string) const;
     void delete_value(const string&);
     void print() const;
 };
+
+int hash_find(const string&);
 
 #endif // HASHTABLE_H_INCLUDED

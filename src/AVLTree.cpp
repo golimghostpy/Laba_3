@@ -1,5 +1,10 @@
 #include "../includes/AVLTree.h"
 
+TreeNode* AVLTree::get_root()
+{
+    return root;
+}
+
 void AVLTree::insert(string key) {
     root = insertNode(root, key);
 }
